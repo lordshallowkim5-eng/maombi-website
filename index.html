@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task management System</title>
+    <meta
+      name="description"
+      content="School Smart helps schools run online exams with ease."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="home.html">task management System</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="exams.html">Exams</a></li>
+          <li><a href="results.html">Results</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="tag">Next-Gen Exam Intelligence</p>
+            <h1>Launch Futuristic Learning With Real-Time Exam Control</h1>
+            <p class="lead">
+              Power your school with a sleek digital command center for exams,
+              analytics, automated grading, and secure student performance tracking.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="register.html">Get Started</a>
+              <a class="btn btn-secondary" href="dashboard.html">Open Demo</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h3>Live System Pulse</h3>
+            <ul>
+              <li><strong>12,000+</strong> Smart exams deployed</li>
+              <li><strong>99.9%</strong> Platform stability</li>
+              <li><strong>300+</strong> Connected campuses</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container about-grid">
+          <div>
+            <p class="section-kicker">About School Smart</p>
+            <h2>Built For The Future Of Education</h2>
+            <p class="about-lead">
+              School Smart combines clean design, fast performance, and intelligent
+              automation to help schools move from paper-based exams to a fully
+              digital learning experience.
+            </p>
+          </div>
+          <div class="about-panel">
+            <div class="about-item">
+              <h3>Smart Automation</h3>
+              <p>Reduce manual work with instant grading, organized records, and automated exam timing.</p>
+            </div>
+            <div class="about-item">
+              <h3>Secure Access</h3>
+              <p>Protect student and teacher workflows with role-based access and reliable platform controls.</p>
+            </div>
+            <div class="about-item">
+              <h3>Insight Engine</h3>
+              <p>Turn scores into actionable insights with performance trends and school-wide reporting.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <h2>Key Features</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Role-Based Access</h3>
+              <p>Admin, teacher, and student permissions out of the box.</p>
+            </article>
+            <article class="card">
+              <h3>Timed Exams</h3>
+              <p>Auto-submit tests when time runs out for fair assessment.</p>
+            </article>
+            <article class="card">
+              <h3>Auto Grading</h3>
+              <p>Grade objective questions instantly and reduce workload.</p>
+            </article>
+            <article class="card">
+              <h3>Analytics Dashboard</h3>
+              <p>Track average scores, completion rates, and performance.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="how-it-works">
+        <div class="container">
+          <h2>How It Works</h2>
+          <div class="steps">
+            <div class="step"><span>1</span> Create classes and subjects</div>
+            <div class="step"><span>2</span> Build and publish exams</div>
+            <div class="step"><span>3</span> Students take tests online</div>
+            <div class="step"><span>4</span> View scores and reports instantly</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pricing">
+        <div class="container">
+          <h2>Simple Pricing</h2>
+          <div class="pricing-grid">
+            <article class="price-card">
+              <h3>Starter</h3>
+              <p class="price">$19<span>/month</span></p>
+              <p>For small schools getting started.</p>
+              <a class="btn btn-primary" href="#contact">Choose Starter</a>
+            </article>
+            <article class="price-card featured">
+              <h3>Pro</h3>
+              <p class="price">$49<span>/month</span></p>
+              <p>Advanced analytics and unlimited exams.</p>
+              <a class="btn btn-primary" href="#contact">Choose Pro</a>
+            </article>
+            <article class="price-card">
+              <h3>Enterprise</h3>
+              <p class="price">Custom</p>
+              <p>For districts with custom needs and support.</p>
+              <a class="btn btn-primary" href="#contact">Contact Sales</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="contact">
+        <div class="container contact">
+          <h2>Contact Us</h2>
+          <p>Tell us about your school, and we will set you up quickly.</p>
+          <form id="contactForm" class="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <p id="formStatus" class="form-status"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> School Smart. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
