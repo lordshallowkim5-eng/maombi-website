@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher | task management sytem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="home.html"> task management sytem</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="teacher.html">Teacher</a></li>
+          <li><a href="exams.html">Exams</a></li>
+          <li><a href="results.html">Results</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="container">
+        <div class="page-header">
+          <h1>Teacher Upload</h1>
+          <p class="helper-text">
+            Upload questions per level and subject. Students will get random questions from your pool.
+          </p>
+        </div>
+
+        <div class="panel">
+          <form id="teacherForm" class="auth-form">
+            <label>
+              Assessment Type
+              <select name="assessmentType" required>
+                <option value="exam" selected>Exam</option>
+                <option value="test">Test</option>
+                <option value="small_test">Small Test</option>
+                <option value="homework">Homework</option>
+              </select>
+            </label>
+
+            <label>
+              Level
+              <select name="level" required>
+                <option value="">Choose level</option>
+                <option value="L3">L3</option>
+                <option value="L4">L4</option>
+                <option value="L5">L5</option>
+              </select>
+            </label>
+
+            <label>
+              Subject
+              <select name="subject" required>
+                <option value="">Choose subject</option>
+                <option value="Introduction to Programming">Introduction to Programming</option>
+                <option value="Web Design Basics">Web Design Basics</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Frontend Development">Frontend Development</option>
+                <option value="Backend Development">Backend Development</option>
+                <option value="Databases and SQL">Databases and SQL</option>
+                <option value="Version Control">Version Control</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+              </select>
+            </label>
+
+            <label>
+              Questions (one per line)
+              <textarea
+                id="questionInput"
+                name="questions"
+                rows="10"
+                placeholder="Example line: What is planning in software development?|Plan|Code|Test|Deploy|a"
+                required
+              ></textarea>
+            </label>
+
+            <label style="display:flex; gap:0.5rem; align-items:center;">
+              <input type="checkbox" id="replaceExisting" checked />
+              Replace existing questions for this subject
+            </label>
+
+            <div style="display:flex; gap:0.75rem; flex-wrap:wrap; align-items:center;">
+              <button class="btn btn-primary" type="submit">Upload Questions</button>
+              <button class="btn btn-secondary" id="clearQuestionBankBtn" type="button">
+                Clear
+              </button>
+            </div>
+          </form>
+
+          <p id="teacherStatus" class="form-status"></p>
+
+          <p class="helper-text" style="margin-top:0.5rem;">
+            Format: <code>questionText|aOption|bOption|cOption|dOption|correct</code>
+            where <code>correct</code> is <code>a</code>, <code>b</code>, <code>c</code>, or <code>d</code>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> School Smart. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | task management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="home.html">task management System</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="exams.html">Exams</a></li>
+          <li><a href="results.html">Results</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="container auth-wrap">
+        <div class="panel">
+          <div class="page-header">
+            <h1>Register</h1>
+            <p class="helper-text">Create an account to get started.</p>
+          </div>
+          <form id="authForm" class="auth-form" data-mode="register">
+            <label>Full Name <input type="text" required placeholder="John Doe" /></label>
+            <label>Email <input type="email" required placeholder="you@school.com" /></label>
+            <label>Role
+              <select required>
+                <option value="">Select role</option>
+                <option>Student</option>
+                <option>Teacher</option>
+                <option>Admin</option>
+              </select>
+            </label>
+            <label>Password <input type="password" required placeholder="********" /></label>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+          <p id="authStatus" class="form-status"></p>
+          <p class="helper-text">Already have an account? <a href="login.html">Login</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> School Smart. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

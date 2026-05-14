@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results | task management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="home.html">task management System</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="exams.html">Exams</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="container">
+        <div class="page-header">
+          <h1>Results</h1>
+          <p class="helper-text">Latest submitted exam summary.</p>
+        </div>
+
+        <div class="panel score-card">
+          <p class="badge" id="resultExamName">Latest Exam</p>
+          <p class="score-number" id="resultScore">0/10</p>
+          <p class="helper-text">Your score updates automatically after exam submission.</p>
+          <p><a class="btn btn-primary" href="exams.html">Retake Exam</a></p>
+        </div>
+
+        <div class="panel" style="margin-top: 1rem">
+          <h3>Recent Attempts</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Exam</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="resultExamNameTable">-</td>
+                  <td id="resultDateTable">-</td>
+                  <td><span class="badge">Completed</span></td>
+                  <td id="resultScoreTable">-</td>
+                </tr>
+                <tr>
+                  <td>HTML & CSS</td>
+                  <td>2026-04-23</td>
+                  <td><span class="badge">Completed</span></td>
+                  <td>18/20</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> School Smart. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

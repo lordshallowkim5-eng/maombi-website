@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | task management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="home.html"> task management System</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="exams.html">Exams</a></li>
+          <li><a href="teacher.html">Teacher</a></li>
+          <li><a href="results.html">Results</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="container">
+        <div class="page-header">
+          <h1>Dashboard</h1>
+          <p class="helper-text">Overview of your platform activity this week.</p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <h3>Total Exams</h3>
+            <p class="stat-value">12</p>
+          </article>
+          <article class="stat-card">
+            <h3>Total Users</h3>
+            <p class="stat-value">45</p>
+          </article>
+          <article class="stat-card">
+            <h3>Total Results</h3>
+            <p class="stat-value">98</p>
+          </article>
+          <article class="stat-card">
+            <h3>Average Score</h3>
+            <p class="stat-value">74%</p>
+          </article>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Recent Exams</h3>
+            <ul class="list">
+              <li>JavaScript Basics</li>
+              <li>HTML & CSS</li>
+              <li>Node.js Fundamentals</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Quick Actions</h3>
+            <p>Create exams, publish tests, and monitor scores.</p>
+            <p><a class="btn btn-primary" href="exams.html">Open Exams</a></p>
+            <p><a class="btn btn-secondary" href="teacher.html">Upload Questions</a></p>
+          </article>
+          <article class="card">
+            <h3>Performance Snapshot</h3>
+            <p>Top class this week: Form 4A (82% average).</p>
+          </article>
+          <article class="card">
+            <h3>Latest Notifications</h3>
+            <ul class="list">
+              <li>12 exams submitted today</li>
+              <li>4 new users registered</li>
+              <li>System backup completed</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> School Smart. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
